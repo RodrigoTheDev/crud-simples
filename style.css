@@ -1,0 +1,96 @@
+:root {
+    --edit-btn: #1e90ff;
+    --delete-btn: #ff531e;
+  }
+
+* {
+    /* font-family: 'Pixelify Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+#title-container {
+    margin: auto;
+    text-align: center;
+}
+
+#crud-create-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+#crud-create {
+    background-color: var(--edit-btn);
+    font-size: 18px;
+}
+
+#crud-create-text {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#crud-create:hover {
+    background-color: white;
+    box-shadow:0px 0px 0px 2px var(--edit-btn) inset;
+    color: var(--edit-btn);
+}
+
+/* Sistema de CRUD */
+
+#crud-system {
+    /* border: black 1px solid; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.crud-item:nth-child(even) {
+    background-color: rgb(199, 199, 199);
+}
+
+.crud-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+    padding: 5px;
+    transition: all 0.2s;
+}
+.crud-item:hover {
+    background-color:#c6e2ff
+}
+
+.crud-info {
+    flex-grow: 1;
+}
+
+.crud-button {
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.1s;
+}
+
+.crud-edit {
+    background-color: var(--edit-btn);
+}
+.crud-edit:hover {
+    background-color: white;
+    box-shadow:0px 0px 0px 2px var(--edit-btn) inset;
+    color: var(--edit-btn);
+}
+
+.crud-delete {
+    background-color: var(--delete-btn);
+}
+.crud-delete:hover {
+    background-color: white;
+    box-shadow:0px 0px 0px 2px var(--delete-btn) inset;
+    color: var(--delete-btn);
+}

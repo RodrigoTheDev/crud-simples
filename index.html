@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Sistema crud</title>
+</head>
+<body>
+    <div id="title-container">
+        <h1>SISTEMA CRUD</h1>
+        <p>Crie, leia, atualize e delete!</p>
+        <id id="crud-create-container">
+            <input type="text" id="crud-create-text" maxlength="100" placeholder="Digite o texto aqui">
+            <button id="crud-create" class="crud-button" onclick="crud_add()">Criar</button>
+        </id>
+    </div>
+
+    <div id="crud-system">
+        <!-- <div class="crud-item" id="crud_item_0">
+            <div class="crud-info">
+                <p class="crud-text" id="crud_edit_0">Texto do crud</p>
+            </div>
+            <div class="crud-options">
+                <button class="crud-edit crud-button" onclick="crud_edit(event)"  data-itemid="crud_edit_0">Editar</button>
+                <button class="crud-delete crud-button" onclick="crud_delete(event)" data-itemid="crud_item_0">Apagar</button>
+            </div>
+        </div> -->
+
+    </div>
+</body>
+</html>
+
+<script src="./script.js"></script>
